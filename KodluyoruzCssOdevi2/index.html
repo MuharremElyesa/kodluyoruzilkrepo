@@ -1,0 +1,98 @@
+<!--Sayfanın HTML sayfası olduğunu söylüyor-->
+<!DOCTYPE html>
+<!--HTML etiketi başlangıcı-->
+<html>
+<!--Sayfamızın HEAD bölümü (arkaplan işlemleri)-->
+<head>
+	<!--Sayfamızı UTF-8 karakter kodlamasıyla yapıyor (çoğu karakter desteklenir)-->
+	<meta charset="utf-8">
+	<!--Sayfamızın görünüm biçimlendirmesi-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Sayfamızın başlığı-->
+	<title>Google!</title>
+</head>
+<!--Sayfamızın BODY bölümü (kullanıcıya görünen taraf)-->
+<body>
+	<!--CENTER etiketi ile ortalanmış Google fotoğrafı (parametrelerle biçimlendirilmiş)(CENTER etiketleri sayfada ortalamak için kullanılmıştır)-->
+	<center><img src="resimler/google.jpg" width="351" height="113" alt="Google!"></center>
+	<center>
+		<!--TABLE etiketi ile tablo başlangıcı (kenarlıklar 0, genişlik %90)-->
+		<table border="0" width="90%">
+			<!--Tablomusun BODY kısmı-->
+			<tbody>
+				<!--Tablomuzun bir sütünü (TR etiketleri sütündür)-->
+				<tr>
+					<!--TD tablomuzun satırlarınır (arkaplan rengi atanmış ve 3 sütünlük yer kaplayacağı belirtilmiş)-->
+					<td bgcolor="#EEEEEE" colspan="3">
+						<center>
+							<!--Sayfadaki bir yazı-->
+							Search the web using Google!
+							<!--BR etiketi bir satır aşağı geçirmek için kullanılır-->
+							<br>
+							<!--İNPUT etiketi giriş yapmak için kullanılır. Type parametresi ile girişin yazı şeklinde olacağı belirtilmiştir (adı "q" olarak atanmıştır, büyüklüğü 40 olarak girilmiştir)-->
+							<input type="text" name="q" size="40">
+							<br>
+							<!--Type submit girilen değerlerin toplanıp gönderilmesini sağlar (gönderdikten sonra PHP ile işlenebilir ancak bu sayfada öyle bir kullanım yoktur) value ise görünen değeridir-->
+							<input type="submit" value="Google Search">
+							<input type="submit" name="sa" value="I'm feeling lucky">
+							<br>
+						</center>
+					</td>
+				</tr>
+				<tr>
+					<td width="37%" bgcolor="#7EE5DA">
+						<center>
+							Special Searches
+							<br>
+							<!--A etiketi link vermek için kullanılır. Href parametresine yönlendirmek istediğimiz linki gireriz-->
+							<a href="Stanford-linux.html">Stanford Search</a>
+							<br>
+							<a href="Stanford-linux.html">Linux Search</a>
+							<br>
+						</center>
+					</td>
+					<td bgcolor="#70CCC2">
+						<center>
+							<!--Font içindeki etiketleri nizami düzene sokmak için kullanılmıştır-->
+							<font size="-1">
+								<a href="help.html">Help!</a>
+								<br>
+								<a href="">About Google!</a>
+								<br>
+								<a href="company-info.html">Company Info</a>
+								<br>
+								<a href="https://web.archive.org/web/19990224043535if_/http://www.google.com/stickers.html">Google! Logos</a>
+								<br>
+							</font>
+						</center>
+					</td>
+					<!--Align parametresi sağ tarafa doğru yaslanacağını belirtmiştir-->
+					<td align="right" bgcolor="#62B3AA">
+						<center>
+							<font size="-1">
+								Get Google!
+								<br>
+								updates monthly:
+								<br>
+								<input type="hidden" name="listname" value="google-friends">
+								<input type="text" name="emailaddr" value="your e-mail">
+								<br>
+								<input type="submit" name="SubmitAction" value="Subscribe">
+								<!--Bu kullanım HTML de boşluk koymak için kullanır-->
+								&nbsp;&nbsp;
+								<font size="-1">
+									<a href="">Archive</a>
+								</font>
+							</font>
+						</center>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+	<p></p>
+	<center>
+		<font size="-1">Copyright ©1998 Google Inc.</font>
+	</center>
+</body>
+</html>
